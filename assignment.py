@@ -2,7 +2,7 @@
 # Do NOT use .append() or .pop() inside Push() and Pop() - move TopOfStack yourself.
 
 
-Stack = [None] * 8
+Stack = [""] * 8
 TopOfStack = -1
 
 
