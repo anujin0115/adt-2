@@ -29,6 +29,16 @@ def GetText():
     return " ".join(copy)
 # Exercise 2
 def DecimalToBinary(Number):
-    # Write your code here
-    pass
+    global Stack, TopOfStack
+    if Number == 0:
+        return "0"
+    TopOfStack = -1
+    while Number > 0:
+        remainder = str(Number % 2)
+        Push(remainder)
+        Number = Number // 2
+    binary_str = ""
+    while TopOfStack != -1:
+        binary_str += Pop()
+    return binary_str
 
